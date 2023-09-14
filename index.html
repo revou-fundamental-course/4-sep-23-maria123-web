@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Matematik Persegi</h1>
+    </header>
+
+
+    <figure class="img_luas_persegi">
+        <img class="img_luas_persegi1" src="IMG/persegi.png" alt="">
+        <figcaption>
+            Rumus Luas Persegi yaitu:<br>
+            L = S x S<br>
+            Di mana :<br>
+            L = Luas <br>
+            S = Sisi
+        </figcaption>
+    </figure>
+
+    <section id="luasinputsection">
+    <label for="inputLuas">Luas Persegi</label>
+    <input type="number" id="inputLuas" placeholder="Masukan Sisi">
+
+    <section class="inputbuttonsection">
+    <!-- DIBAGIAN BUTTON HITUNG JUGA DI KASIH ID SESUAI DENGAN YANG ADA DI JS -->
+    <button id="calculate_luas">Hitung</button>
+    <button id="reset_luas" onclick="resetInputLuas(document.getElementById('inputLuas'))">Reset</button>
+    </section>
+
+    <!-- SECTION KELILING PERSEGI -->
+
+    <section id="kelilinginputsection">
+
+        <figure class="img_kel_persegi">
+            <img class="img_kel_persegi1" src="IMG/persegi.png" alt="">
+            <figcaption>
+                Rumus Keliling Persegi yaitu:<br>
+                K = 4 x S<br>
+                Di mana :<br>
+                K = Keliling <br>
+                S = Sisi
+            </figcaption>
+        </figure>
+    <label for="inputKel1">Keliling Persegi</label>
+
+    <!-- MASING MASING INPUT DIKASIH ID YG BERBEDA -->
+    <input type="number" id="inputKel" placeholder="Masukan Sisi">
+    </section>
+        </section>
+
+        <section class="inputbuttonsection">
+            <!-- DIBAGIAN BUTTON HITUNG JUGA DI KASIH ID SESUAI DENGAN YANG ADA DI JS -->
+            <button id="calculate_keliling">Hitung</button>
+            <button id="reset_kel" onclick="resetInputKel(document.getElementById('inputKel'))">Reset</button>
+        </section>
+
+    <br>
+    <h5>Hasil Perhitungan Luas : </h5><h5 id="result"></h5>
+    <h5>Hasil Perhitungan Keliling : </h5><h5 id="result_keliling"></h5>
+    
+</body>
+
+</html>
